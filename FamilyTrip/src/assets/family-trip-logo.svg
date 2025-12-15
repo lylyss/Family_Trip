@@ -1,0 +1,20 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Family Trip Logo</title>
+  <desc id="desc">Stylized FT lettering with a sun, airplane, and palm tree over a gradient background.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7931e" />
+      <stop offset="55%" stop-color="#f7b733" />
+      <stop offset="100%" stop-color="#00a8c5" />
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="32" fill="url(#bg)" />
+  <g fill="#fff">
+    <circle cx="46" cy="54" r="16" />
+    <path d="M46 25v14m0 30v14m25-25H57m-30 0H13m20-17 10 10m-10 30 10-10m30 10-10-10m10-30-10 10" stroke="#fff" stroke-width="6" stroke-linecap="round" />
+    <path d="M186 55c-9 0-24 9-24 9l-27-13c-7-2-10 5-5 8l21 13-31 17c-5 3-3 11 3 10l41-8 21 8c6 2 11-5 6-9l-12-9s18-6 21-14c2-5-2-12-13-12z" />
+    <path d="M60 197h-20V78h20v38h56V78h20v119h-20v-65H60v65z" />
+    <path d="M146 78h76v20h-56v30h48v20h-48v49h-20V78z" />
+    <path d="M176 184c12-13 34-23 34-23s-4 12-12 24c10-5 20-5 20-5s-8 11-22 21c4 2 11 4 11 4s-18 8-36 7c-17-1-29-9-33-13 16 4 31-1 38-7z" />
+  </g>
+</svg>
