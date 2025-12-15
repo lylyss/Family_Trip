@@ -59,6 +59,89 @@
   display: inline-block;
 }
 
+.nav-translucent {
+  backdrop-filter: blur(6px);
+  background-color: rgba(36, 45, 68, 0.45) !important;
+}
+
+.nav-opaque {
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.589) !important;
+  transition: background-color 0.3s ease;
+}
+
+.nav-opaque .brand-title,
+.nav-opaque .navbar-brand span {
+  color: #0f172a !important;
+}
+/* --------------------------------------------------- */
+.store-section {
+  background: rgba(219, 219, 219, 0.349);
+  backdrop-filter: blur(12px);
+  margin-top: 3rem;
+  box-shadow: 0 -10px 50px rgba(0, 0, 0, 0.35);
+  position: relative;
+}
+
+.store-kicker {
+  letter-spacing: 0.45em;
+  color: #facc15;
+  font-size: 0.85rem;
+}
+
+.store-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.store-badge {
+  display: inline-flex;
+  border-radius: 1rem;
+  padding: 0.35rem 0.75rem;
+  background: rgba(255, 255, 255, 0.705);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.store-badge img {
+  height: 56px;
+}
+
+.store-badge:hover,
+.store-badge:focus-visible {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.store-card {
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.floating-download {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 2000;
+  background: rgba(15, 23, 42, 0.11);
+
+  padding: 0.35rem 0.75rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+  transition: transform 0.2s ease;
+}
+
+.floating-download img {
+  height: 48px;
+  display: block;
+}
+
+.floating-download:hover,
+.floating-download:focus-visible {
+  transform: translateY(-4px);
+}
+/* ---------------------------------------------------------------- */
 @media (min-width: 992px) {
   .hero-content {
     flex-direction: row;

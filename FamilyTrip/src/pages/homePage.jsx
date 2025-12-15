@@ -1,5 +1,6 @@
 import NavigationBar from "../components/navbar";
 import CaroselSection from "../components/caroselSection";
+import StoreSection from "../components/storeSection";
 import Footer from "../components/footer";
 import devicesImage from "../assets/assets_Pages/device.png";
 
@@ -22,6 +23,7 @@ const HomePage = () => {
           </div>
         </div>
       </main>
+      <StoreSection />
       <CaroselSection />
       <Footer />
     </>

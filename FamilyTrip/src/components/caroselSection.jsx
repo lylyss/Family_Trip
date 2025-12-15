@@ -4,13 +4,10 @@ import Row from "react-bootstrap/Row";
 
 import beachTrakingDog from "../assets/beachTrakingDog.jpg";
 import famTurist from "../assets/famTurist.jpg";
-import family1 from "../assets/family1.jpg";
 import montainFamily from "../assets/montainFamily.jpg";
 import riverFam from "../assets/riverFam.jpg";
 import sunsetSea from "../assets/sunsetSea.jpg";
 import treeFam from "../assets/treeFam.jpg";
-import famTraking from "../assets/famTraking.jpg";
-import cityTrakingDog from "../assets/cityTrakingDog.jpg";
 
 const carouselGroups = [
   {
@@ -54,28 +51,6 @@ const carouselGroups = [
         src: riverFam,
         caption: "Sponde tranquille",
         description: "Rallenta accanto all'acqua con giochi per i più piccoli.",
-      },
-    ],
-  },
-  {
-    id: "city",
-    title: "City break dinamici",
-    speed: 22,
-    slides: [
-      {
-        src: cityTrakingDog,
-        caption: "Tour urbani",
-        description: "Nuovi murales, musei kid-friendly e street food locale.",
-      },
-      {
-        src: family1,
-        caption: "Memorie condivise",
-        description: "Raccogli momenti spontanei in centro città.",
-      },
-      {
-        src: famTraking,
-        caption: "Pedalate in famiglia",
-        description: "Itinerari sicuri per scoprire quartieri creativi.",
       },
     ],
   },

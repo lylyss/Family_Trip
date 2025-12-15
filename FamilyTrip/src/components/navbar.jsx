@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
@@ -7,13 +8,16 @@ import Stack from "react-bootstrap/Stack";
 import logo from "../assets/assets_Pages/logoapp.png";
 
 const NavigationBar = () => {
+  const [lightNav, setLightNav] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setLightNav(window.scrollY > 400);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <Navbar
-      expand="md"
-      className="shadow-sm bg-transparent border-0"
-      sticky="top"
-      style={{ backdropFilter: "blur(3px)", backgroundColor: "rgba(15, 23, 42, 0.45)" }}
-    >
+    <Navbar expand="md" className={`shadow-sm border-0 ${lightNav ? "nav-opaque" : "nav-translucent"}`} sticky="top">
       <Container className="py-3 d-flex align-items-center justify-content-between gap-3 flex-wrap">
         <Navbar.Brand href="/" className="text-decoration-none">
           <Stack direction="horizontal" gap={3} className="align-items-center">
