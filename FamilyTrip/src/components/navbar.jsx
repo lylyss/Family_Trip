@@ -18,7 +18,7 @@ const NavigationBar = () => {
         <Navbar.Brand href="/" className="text-decoration-none">
           <Stack direction="horizontal" gap={3} className="align-items-center">
             <Image src={logo} alt="Family Trip logo" width={65} height={65} style={{ borderRadius: "10px" }} />
-            <span className="fw-bold display-5 text-light mb-0">Family Trip</span>
+            <span className="brand-title text-light mb-0">Family Trip</span>
           </Stack>
         </Navbar.Brand>
         <Button href="#download" variant="warning" size="lg" className="text-uppercase fw-semibold px-5 py-3 fs-5">

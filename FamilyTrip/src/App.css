@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+
 #root {
   min-height: 100vh;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/assets_Pages/spiaggia.jpg") center/cover no-repeat fixed;
@@ -5,8 +7,7 @@
 
 .app-main {
   padding: 4rem 1rem;
-  text-align: center;
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   color: #fff;
 }
@@ -21,6 +22,54 @@
   color: #f1f5f9;
   font-size: 1.1rem;
   line-height: 1.6;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero-copy {
+  background: rgba(15, 23, 42, 0.65);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-visual img {
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.55));
+}
+
+.brand-title {
+  font-family: "Paytone One", "Trebuchet MS", "Gill Sans", sans-serif;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-shadow: 0 10px 25px rgba(15, 23, 42, 0.55);
+  display: inline-block;
+}
+
+@media (min-width: 992px) {
+  .hero-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .hero-copy,
+  .hero-visual {
+    flex: 1;
+  }
 }
 
 .carousel-section {
