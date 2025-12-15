@@ -1,0 +1,30 @@
+import Container from "react-bootstrap/Container";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa6";
+
+const socialLinks = [
+  { label: "Facebook", href: "https://facebook.com", icon: FaFacebookF },
+  { label: "Twitter", href: "https://twitter.com", icon: FaTwitter },
+  { label: "TikTok", href: "https://www.tiktok.com", icon: FaTiktok },
+  { label: "Instagram", href: "https://instagram.com", icon: FaInstagram },
+];
+
+const Footer = () => {
+  return (
+    <footer className="site-footer mt-5">
+      <Container className="py-5 d-flex flex-column align-items-center gap-4">
+        <p className="text-white-50 text-center small mb-0">Seguici per nuove ispirazioni di viaggio e itinerari curati ogni settimana.</p>
+        <div className="d-flex flex-wrap justify-content-center gap-3">
+          {/* eslint-disable-next-line no-unused-vars */}
+          {socialLinks.map(({ label, href, icon: Icon }) => (
+            <a key={label} href={href} target="_blank" rel="noreferrer" className="social-pill" aria-label={`Apri ${label}`}>
+              <Icon />
+            </a>
+          ))}
+        </div>
+      </Container>
+    </footer>
+  );
+};
+
+export default Footer;
