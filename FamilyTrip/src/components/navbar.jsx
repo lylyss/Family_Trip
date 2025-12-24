@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import Stack from "react-bootstrap/Stack";
 
-import logo from "../assets/assets_Pages/logoapp.png";
+import logo from "../assets/assets_Pages/IMG-20251011-WA0019.PNG";
 
 const NavigationBar = () => {
   const [lightNav, setLightNav] = useState(false);
