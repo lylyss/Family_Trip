@@ -127,36 +127,6 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 /* --------------------------------------------------- */
-.store-section {
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 -10px 50px rgba(0, 0, 0, 0.35);
-}
-
-.store-section::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, rgba(4, 25, 55, 0.82), rgba(19, 78, 119, 0.78));
-  backdrop-filter: blur(4px);
-  z-index: -1;
-}
-
-.store-section__video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -2;
-  filter: saturate(1.05) brightness(0.85);
-}
-
-.store-section__content {
-  position: relative;
-  z-index: 1;
-}
-
 .store-kicker {
   letter-spacing: 0.45em;
   color: #facc15;
@@ -177,33 +147,79 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.store-section {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  padding: 3rem 0;
+  min-height: 420px;
+  box-shadow: 0 -10px 50px rgba(0, 0, 0, 0.35);
+}
+
+.store-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(26, 166, 179, 0.836), rgba(255, 131, 60, 0.973));
+
+  z-index: 1;
+  pointer-events: none;
+}
+
+.store-section__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  /* filter: saturate(1.05) brightness(0.85); */
+  pointer-events: none;
+}
+
+.store-section__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.store-section__content > .container {
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .store-section {
+    padding: 2.5rem 0;
+    min-height: 360px;
+  }
+
+  .store-section__content {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 992px) {
+  .store-section {
+    min-height: 520px;
+  }
+}
+
+.store-badge {
+  padding: 0.25rem 0.65rem;
+}
+
 .store-badge img {
-  height: 56px;
+  height: 48px;
 }
 
-.store-badge:hover,
-.store-badge:focus-visible {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
-}
-
-.store-card {
-  background: rgba(255, 189, 89, 0.6);
-  padding: 2rem;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
-}
-/* ------------------ */
-
-.floating-download {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 2000;
-  background: rgba(15, 23, 42, 0.11);
-
-  padding: 0.35rem 0.75rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
-  transition: transform 0.2s ease;
+@media (max-width: 575.98px) {
+  .store-badge img {
+    height: 42px;
+  }
 }
 
 .floating-download img {

@@ -8,7 +8,7 @@ import seaWaveVideo from "../assets/video/seawave.mp4";
 
 const StoreSection = () => {
   return (
-    <section id="download" className="store-section py-5">
+    <section id="download" className="store-section">
       <video className="store-section__video" autoPlay muted loop playsInline aria-hidden="true">
         <source src={seaWaveVideo} type="video/mp4" />
       </video>
