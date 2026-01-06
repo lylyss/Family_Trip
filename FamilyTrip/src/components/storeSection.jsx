@@ -14,15 +14,15 @@ const StoreSection = () => {
       </video>
       <div className="store-section__content">
         <Container>
-          <Row className="align-items-center g-4">
-            <Col md={7}>
+          <Row className="align-items-center g-4 text-center ">
+            <Col md={12}>
               <p className="store-kicker text-uppercase mb-2">Scarica l'app</p>
               <h2 className="display-6 fw-semibold text-white mb-3">Esperienze curate per ogni giornata in famiglia</h2>
               <p className="text-white-75 mb-4">
                 Ricevi itinerari personalizzati, promemoria delle attività e consigli in tempo reale per vivere ogni viaggio in modo semplice e leggero. Tutto
                 direttamente sul tuo smartphone o tablet.
               </p>
-              <div className="store-badges">
+              <div className="store-badges align-items-center justify-content-center justify-content-start d-flex gap-3">
                 <a href="https://www.apple.com/app-store/" target="_blank" rel="noreferrer" className="store-badge" aria-label="Scarica su App Store">
                   <img src={appStoreBadge} alt="Disponibile su App Store" loading="lazy" />
                 </a>
@@ -35,17 +35,6 @@ const StoreSection = () => {
                 >
                   <img src={googlePlayBadge} alt="Disponibile su Google Play" loading="lazy" />
                 </a>
-              </div>
-            </Col>
-            <Col md={5}>
-              <div className="store-card mt-4 mt-md-0">
-                <p className="mb-1 text-dark-50  fs-5">Ready per partire?</p>
-                <h3 className="h4 text-dark mb-3">Pochi tap per creare la tua agenda FamilyTrip.</h3>
-                <ul className="list-unstyled text-dark-75 mb-0">
-                  <li>• Itinerari smart aggiornati ogni giorno</li>
-                  <li>• Preferiti condivisibili con tutta la famiglia</li>
-                  <li>• Notifiche meteo e consigli rapidi</li>
-                </ul>
               </div>
             </Col>
           </Row>
