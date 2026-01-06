@@ -18,7 +18,7 @@ const StoreSection = () => {
             <Col md={12}>
               <p className="store-kicker text-uppercase mb-2 fs-6">Scarica l'app</p>
               <h2 className="display-6 fw-semibold text-dark mb-3">Esperienze curate per ogni giornata in famiglia</h2>
-              <p className="text-dark-75 fw-medium mb-4 py-3 px-lg-0">
+              <p className="text-dark-75 fw-medium mb-4 py-3 px-5 px-lg-0">
                 Ricevi itinerari personalizzati, promemoria delle attività e consigli in tempo reale per vivere ogni viaggio in modo semplice e leggero. Tutto
                 direttamente sul tuo smartphone o tablet.
               </p>
