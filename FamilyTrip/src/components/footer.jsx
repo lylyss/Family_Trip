@@ -19,7 +19,6 @@ const Footer = () => {
   return (
     <footer className="site-footer mt-5">
       <Container className="py-5 d-flex flex-column align-items-center gap-4">
-        <p className="text-white-50 text-center small mb-0">Seguici per nuove ispirazioni di viaggio e itinerari curati ogni settimana.</p>
         <div className="d-flex flex-wrap justify-content-center gap-3">
           {/* eslint-disable-next-line no-unused-vars */}
           {socialLinks.map(({ label, href, icon: Icon }) => (
