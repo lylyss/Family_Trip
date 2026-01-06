@@ -160,7 +160,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, rgba(26, 166, 179, 0.836), rgba(255, 131, 60, 0.973));
+  background: linear-gradient(120deg, rgba(26, 166, 179, 0.781), rgba(255, 131, 60, 0.932));
 
   z-index: 1;
   pointer-events: none;
