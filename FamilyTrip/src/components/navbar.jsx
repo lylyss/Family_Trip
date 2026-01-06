@@ -11,8 +11,9 @@ const NavigationBar = () => {
   const [lightNav, setLightNav] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setLightNav(window.scrollY > 400);
+    const onScroll = () => setLightNav(window.scrollY > 0);
     window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -22,10 +23,15 @@ const NavigationBar = () => {
         <Navbar.Brand href="/" className="text-decoration-none">
           <Stack direction="horizontal" gap={3} className="align-items-center">
             <Image src={logo} alt="Family Trip logo" width={65} height={65} style={{ borderRadius: "10px" }} />
-            <span className="brand-title text-light mb-0">Family Trip</span>
+            <span className="brand-title text-light mb-0">FamilyTrip</span>
           </Stack>
         </Navbar.Brand>
-        <Button href="#download" variant="warning" size="lg" className="text-uppercase fw-semibold px-5 py-3 fs-5">
+        <Button
+          href="https://play.google.com/store/apps/details?id=app.familytrip.xyz"
+          size="lg"
+          className="text-uppercase fw-semibold px-5 py-3 fs-5 border-0"
+          style={{ backgroundColor: "RGB(255, 63, 29)" }}
+        >
           scarica l'app
         </Button>
       </Container>
