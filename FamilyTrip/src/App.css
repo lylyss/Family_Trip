@@ -100,7 +100,7 @@
 }
 
 .hero-visual img {
-  max-width: 480px;
+  max-width: 300px;
   width: 100%;
   height: auto;
   filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.55));
@@ -116,14 +116,14 @@
 }
 
 .nav-translucent {
-  background-color: transparent !important;
+  background: linear-gradient(140deg, rgba(9, 37, 68, 0.76) 0%, rgba(23, 102, 134, 0.507) 40%, rgba(242, 161, 74, 0.541) 100%) !important;
   backdrop-filter: none;
   box-shadow: none;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .nav-opaque {
-  background-color: rgb(255, 189, 89) !important;
+  background: linear-gradient(140deg, rgba(9, 37, 68, 0.945) 0%, rgba(23, 102, 134, 0.88) 40%, rgba(242, 161, 74, 0.918) 100%) !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 /* --------------------------------------------------- */
@@ -204,7 +204,7 @@
 
 @media (min-width: 992px) {
   .store-section {
-    min-height: 520px;
+    min-height: 320px;
   }
 }
 
