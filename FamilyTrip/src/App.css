@@ -332,3 +332,54 @@
   box-shadow: 0 12px 30px rgba(250, 204, 21, 0.35);
   color: #0f172a;
 }
+
+.app-screens-section {
+  padding: 3.5rem 0 4rem;
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+  color: #0f172a;
+}
+
+.screens-section__eyebrow {
+  letter-spacing: 0.35em;
+  font-size: 0.82rem;
+  color: #2563eb;
+  margin-bottom: 0.75rem;
+}
+
+.screens-section__intro {
+  color: #475569;
+  font-size: 1.05rem;
+}
+
+.screens-image-frame {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #f8fafc;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.screens-image-frame:hover,
+.screens-image-frame:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.screens-image-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 575.98px) {
+  .app-screens-section {
+    padding: 3rem 0;
+  }
+
+  .screens-section__eyebrow {
+    letter-spacing: 0.25em;
+  }
+}

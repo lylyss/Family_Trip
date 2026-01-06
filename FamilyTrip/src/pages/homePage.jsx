@@ -1,6 +1,7 @@
 import NavigationBar from "../components/navbar";
 
 import StoreSection from "../components/storeSection";
+import AppScreensSection from "../components/appScreensSection";
 import Footer from "../components/footer";
 import devicesImage from "../assets/assets_Pages/device.png";
 
@@ -24,6 +25,7 @@ const HomePage = () => {
         </div>
       </main>
       <StoreSection />
+      <AppScreensSection />
 
       <Footer />
     </>
