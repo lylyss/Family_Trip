@@ -23,7 +23,13 @@ const StoreSection = () => {
                 direttamente sul tuo smartphone o tablet.
               </p>
               <div className="store-badges align-items-center justify-content-center justify-content-start d-flex gap-3">
-                <a href="https://www.apple.com/app-store/" target="_blank" rel="noreferrer" className="store-badge" aria-label="Scarica su App Store">
+                <a
+                  href=" https://apps.apple.com/us/app/family-trip/id6756327275"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="store-badge"
+                  aria-label="Scarica su App Store"
+                >
                   <img src={appStoreBadge} alt="Disponibile su App Store" loading="lazy" />
                 </a>
                 <a
