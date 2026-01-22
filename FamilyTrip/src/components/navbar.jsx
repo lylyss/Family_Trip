@@ -28,13 +28,8 @@ const NavigationBar = () => {
             <span className="brand-title text-light mb-0">FamilyTrip</span>
           </Stack>
         </Navbar.Brand>
-        <Button
-          size="lg"
-          className="text-uppercase fw-semibold px-5 py-3 fs-5 border-0"
-          style={{ backgroundColor: "RGB(255, 63, 29)" }}
-          onClick={() => navigate("/app-download")}
-        >
-          scarica l'app
+        <Button size="lg" className="text-uppercase fw-semibold px-5 py-3 fs-5 border-0 animated-cta" onClick={() => navigate("/app-download")}>
+          <span>scarica l&apos;app</span>
         </Button>
       </Container>
     </Navbar>

@@ -33,7 +33,10 @@ export default function DownloadSection() {
   }, []);
 
   return (
-    <section className="download-section position-relative overflow-hidden">
+    <section
+      className="download-section position-relative overflow-hidden"
+      style={{ minHeight: "70vh", display: "flex", alignItems: "center", justifyContent: "center" }}
+    >
       {backgroundSlides.map((slide, index) =>
         slide.type === "video" ? (
           <video
@@ -83,7 +86,7 @@ export default function DownloadSection() {
       />
       <Container
         className="py-5 text-center text-white position-relative"
-        style={{ minHeight: "420px", display: "flex", flexDirection: "column", justifyContent: "center", gap: "1.5rem" }}
+        style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: "1.5rem" }}
       >
         <p style={{ fontSize: "3.5rem", fontWeight: 600, minHeight: "3rem", letterSpacing: "0.02em" }}>{typedText}</p>
         <div className="store-badges align-items-center justify-content-center justify-content-start d-flex gap-3">

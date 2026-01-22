@@ -378,3 +378,43 @@
     letter-spacing: 0.25em;
   }
 }
+
+.animated-cta {
+  position: relative;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.animated-cta::before,
+.animated-cta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  z-index: 0;
+}
+
+.animated-cta::before {
+  inset: -2px;
+  background: linear-gradient(120deg, #ff3f1d, #fbbf24, #ff3f1d);
+  animation: ctaBorder 3s linear infinite;
+}
+
+.animated-cta::after {
+  inset: 2px;
+  background: #ff3f1d;
+}
+
+.animated-cta > span {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes ctaBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

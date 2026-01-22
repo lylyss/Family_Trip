@@ -58,28 +58,6 @@ const reopenButtonStyle = {
   zIndex: 9998,
 };
 
-const infoListStyle = {
-  margin: "0.75rem 0 0",
-  padding: 0,
-  listStyle: "none",
-  lineHeight: 1.4,
-};
-
-const controllerDetails = [
-  {
-    label: "Titolare del trattamento",
-    value: "Aggiorna con il nominativo riportato nella tua policy Iubenda.",
-  },
-  {
-    label: "Contatti",
-    value: "Inserisci l’indirizzo email/PEC ufficiale e altri recapiti richiesti.",
-  },
-  {
-    label: "Sede legale",
-    value: "Compila con l’indirizzo completo indicato nella sezione Owner and Data Controller.",
-  },
-];
-
 const cookiePolicyUrl = "https://www.iubenda.com/privacy-policy/64085363/cookie-policy#owner-and-data-controller";
 
 const bannerTitleId = "cookie-banner-title";
@@ -159,13 +137,7 @@ export default function CookieManager() {
               Utilizziamo cookie tecnici e di terze parti per migliorare la tua esperienza e analizzare il traffico. Puoi accettare o rifiutare in qualsiasi
               momento.
             </p>
-            <ul style={infoListStyle}>
-              {controllerDetails.map(({ label, value }) => (
-                <li key={label}>
-                  <strong>{label}:</strong> {value}
-                </li>
-              ))}
-            </ul>
+
             <a href={cookiePolicyUrl} target="_blank" rel="noopener noreferrer" style={{ color: "#0f766e", fontWeight: 600 }}>
               Consulta la cookie policy completa
             </a>
