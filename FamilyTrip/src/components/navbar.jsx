@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
@@ -9,6 +10,7 @@ import logo from "../assets/assets_Pages/IMG-20251011-WA0019.PNG";
 
 const NavigationBar = () => {
   const [lightNav, setLightNav] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => setLightNav(window.scrollY > 0);
@@ -27,10 +29,10 @@ const NavigationBar = () => {
           </Stack>
         </Navbar.Brand>
         <Button
-          href="https://play.google.com/store/apps/details?id=app.familytrip.xyz"
           size="lg"
           className="text-uppercase fw-semibold px-5 py-3 fs-5 border-0"
           style={{ backgroundColor: "RGB(255, 63, 29)" }}
+          onClick={() => navigate("/app-download")}
         >
           scarica l'app
         </Button>
