@@ -15,6 +15,18 @@ const socialLinks = [
   { label: "Instagram", href: "https://instagram.com", icon: FaInstagram },
 ];
 
+const socialPillStyle = {
+  display: "inline-flex",
+  alignItems: "center",
+  justifyContent: "center",
+  width: "115px",
+  height: "48px",
+  borderRadius: "30px",
+  border: "1px solid rgba(255,255,255,0.3)",
+  backgroundColor: "rgba(255,255,255,0.08)",
+  color: "#fff",
+};
+
 const Footer = () => {
   return (
     <footer className="site-footer mt-5">
@@ -22,8 +34,8 @@ const Footer = () => {
         <div className="d-flex flex-wrap justify-content-center gap-3">
           {/* eslint-disable-next-line no-unused-vars */}
           {socialLinks.map(({ label, href, icon: Icon }) => (
-            <a key={label} href={href} target="_blank" rel="noreferrer" className="social-pill" aria-label={`Apri ${label}`}>
-              <Icon />
+            <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={`Apri ${label}`} style={socialPillStyle}>
+              <Icon size={20} />
             </a>
           ))}
         </div>

@@ -2,7 +2,9 @@
 
 #root {
   min-height: 100vh;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/assets_Pages/spiaggia.jpg") center/cover no-repeat fixed;
+  background:
+    linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./assets/assets_Pages/spiaggia.jpg") center/cover no-repeat fixed;
 }
 
 .app-main {
@@ -119,7 +121,9 @@
   background: linear-gradient(140deg, rgba(9, 37, 68, 0.76) 0%, rgba(23, 102, 134, 0.507) 40%, rgba(242, 161, 74, 0.541) 100%) !important;
   backdrop-filter: none;
   box-shadow: none;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .nav-opaque {
@@ -144,7 +148,9 @@
   border-radius: 1rem;
   padding: 0.35rem 0.75rem;
   background: rgba(255, 255, 255, 0.705);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .store-section {
@@ -313,19 +319,6 @@
   backdrop-filter: blur(14px);
 }
 
-.social-pill {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #0f172a;
-  background: rgb(255, 189, 89);
-  font-size: 1.25rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
 .social-pill:hover,
 .social-pill:focus-visible {
   transform: translateY(-4px) scale(1.03);
@@ -359,7 +352,9 @@
   background: #f8fafc;
   border: 1px solid rgba(148, 163, 184, 0.3);
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .screens-image-frame:hover,

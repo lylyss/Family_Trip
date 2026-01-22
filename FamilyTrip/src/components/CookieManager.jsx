@@ -8,7 +8,7 @@ const bannerStyle = {
   transform: "translateX(-50%)",
   maxWidth: "480px",
   width: "calc(100% - 2rem)",
-  background: "#ffffff",
+  background: "#ffffffff",
   color: "#1f2933",
   borderRadius: "12px",
   boxShadow: "0 10px 30px rgba(0,0,0,0.15)",
