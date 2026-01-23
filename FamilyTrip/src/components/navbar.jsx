@@ -25,7 +25,10 @@ const NavigationBar = () => {
         <Navbar.Brand href="/" className="text-decoration-none">
           <Stack direction="horizontal" gap={3} className="align-items-center">
             <Image src={logo} alt="Family Trip logo" width={65} height={65} style={{ borderRadius: "10px" }} />
-            <span className="brand-title text-light mb-0">FamilyTrip</span>
+            <span className="brand-title text-light mb-0">
+              Family Trip
+              <span className="brand-badge">APP</span>
+            </span>
           </Stack>
         </Navbar.Brand>
         <Button size="lg" className="text-uppercase fw-semibold px-5 py-3 fs-5 border-0 animated-cta" onClick={() => navigate("/app-download")}>
