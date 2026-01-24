@@ -33,10 +33,7 @@ export default function DownloadSection() {
   }, []);
 
   return (
-    <section
-      className="download-section position-relative overflow-hidden"
-      style={{ minHeight: "70vh", display: "flex", alignItems: "center", justifyContent: "center" }}
-    >
+    <section className="download-section position-relative overflow-hidden">
       {backgroundSlides.map((slide, index) =>
         slide.type === "video" ? (
           <video
@@ -46,16 +43,7 @@ export default function DownloadSection() {
             loop
             playsInline
             aria-hidden="true"
-            style={{
-              position: "absolute",
-              inset: 0,
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              filter: "blur(6px) brightness(0.55)",
-              opacity: index === activeSlide ? 1 : 0,
-              transition: "opacity 1.2s ease",
-            }}
+            className={`download-section__media${index === activeSlide ? " is-visible" : ""}`}
           >
             <source src={slide.src} type="video/mp4" />
           </video>
@@ -65,31 +53,16 @@ export default function DownloadSection() {
             src={slide.src}
             alt={slide.alt}
             aria-hidden="true"
-            style={{
-              position: "absolute",
-              inset: 0,
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              filter: "blur(6px) brightness(0.55)",
-              opacity: index === activeSlide ? 1 : 0,
-              transition: "opacity 1.2s ease",
-            }}
+            className={`download-section__media${index === activeSlide ? " is-visible" : ""}`}
           />
         ),
       )}
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-        }}
-      />
-      <Container
-        className="py-5 text-center text-white position-relative"
-        style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: "1.5rem" }}
-      >
-        <p style={{ fontSize: "3.5rem", fontWeight: 600, minHeight: "3rem", letterSpacing: "0.02em" }}>{typedText}</p>
-        <div className="store-badges align-items-center justify-content-center justify-content-start d-flex gap-3">
+      <div className="download-section__overlay" aria-hidden="true" />
+      <Container className="download-section__content text-white text-center text-lg-start">
+        <p className="download-section__headline" aria-live="polite">
+          {typedText}
+        </p>
+        <div className="download-section__badges store-badges d-flex">
           <a
             href="https://apps.apple.com/us/app/family-trip/id6756327275"
             target="_blank"

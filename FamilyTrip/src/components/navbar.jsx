@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
@@ -11,6 +11,8 @@ import logo from "../assets/assets_Pages/IMG-20251011-WA0019.PNG";
 const NavigationBar = () => {
   const [lightNav, setLightNav] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+  const isDownloadPage = location.pathname === "/app-download";
 
   useEffect(() => {
     const onScroll = () => setLightNav(window.scrollY > 0);
@@ -31,9 +33,11 @@ const NavigationBar = () => {
             </span>
           </Stack>
         </Navbar.Brand>
-        <Button size="lg" className="text-uppercase fw-semibold px-5 py-3 fs-5 border-0 animated-cta" onClick={() => navigate("/app-download")}>
-          <span>scarica l&apos;app</span>
-        </Button>
+        {!isDownloadPage && (
+          <Button size="lg" className="text-uppercase fw-semibold px-5 py-3 fs-5 border-0 animated-cta" onClick={() => navigate("/app-download")}>
+            <span>scarica l&apos;app</span>
+          </Button>
+        )}
       </Container>
     </Navbar>
   );

@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { loadAnalytics } from "../utils/analytics";
+import cookieIcon from "../assets/assets_Pages/cookie.png";
 
 const bannerStyle = {
   position: "fixed",
@@ -41,21 +42,7 @@ const primaryButtonStyle = {
 const secondaryButtonStyle = {
   ...primaryButtonStyle,
   background: "#e5e7eb",
-  color: "#111827",
-};
-
-const reopenButtonStyle = {
-  position: "fixed",
-  bottom: "1rem",
-  right: "1rem",
-  padding: "0.6rem 1.25rem",
-  borderRadius: "999px",
-  border: "none",
-  background: "#0f172a",
-  color: "#f9fafb",
-  fontWeight: 600,
-  cursor: "pointer",
-  zIndex: 9998,
+  color: "#42464eff",
 };
 
 const cookiePolicyUrl = "https://www.iubenda.com/privacy-policy/64085363/cookie-policy#owner-and-data-controller";
@@ -153,8 +140,8 @@ export default function CookieManager() {
         </div>
       )}
       {!isBannerVisible && (
-        <button type="button" style={reopenButtonStyle} onClick={handleOpenPreferences} aria-label="Apri preferenze cookie">
-          Preferenze cookie
+        <button type="button" className="cookie-preferences-button" onClick={handleOpenPreferences} aria-label="Apri preferenze cookie">
+          <img src={cookieIcon} alt="" aria-hidden="true" />
         </button>
       )}
     </>
