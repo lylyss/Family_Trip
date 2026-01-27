@@ -9,7 +9,7 @@ export default function AppDownloadPage() {
     <>
       <NavigationBar />
       <DownloadSection />
-      <Footer fixed />
+      <Footer />
     </>
   );
 }
