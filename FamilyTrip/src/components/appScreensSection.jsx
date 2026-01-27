@@ -19,7 +19,7 @@ const AppScreensSection = () => {
   return (
     <section className="app-screens-section" aria-labelledby="app-screens-title">
       <Container>
-        <Row className="g-3 g-md-4 mt-4" style={customStyle} justify-content-center>
+        <Row className="g-3 g-md-4 mt-4 justify-content-center" style={customStyle}>
           {screenImages.map((highlight) => (
             <Col xs={6} md={3} key={highlight.id}>
               <div className="screens-image-frame">
